@@ -1,0 +1,44 @@
+header {
+    background-color: var(--primary-bg);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--secundary-accent);
+}
+
+header h1 {
+    margin-left: 100px;
+    color: var(--primary-accent);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secundary-accent);
+  }
+  
+header a:visited {
+    color: var(--secundary-accent);
+}
+
+header a:hover {
+    color: var(--primary-accent);
+    transition: .2s;
+}
+
+header a:active {
+    color: var(--primary-accent);
+}
+
+nav {
+    margin-right: 100px;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+nav a+a {
+    margin-left: 32px;
+}
