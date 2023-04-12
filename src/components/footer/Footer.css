@@ -1,0 +1,16 @@
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid orange;
+    padding: 0 100px;
+}
+
+footer ul li {
+    list-style: none;
+    color: var(--secundary-accent);
+    font-size: 1.25em;
+    font-weight: bold;
+}
