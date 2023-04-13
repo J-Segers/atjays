@@ -1,1 +1,20 @@
+#app-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.contact {
+  text-decoration: none;
+  width:125px;
+  height: 50px;
+  color: var(--primary-accent);
+  font-size: 1.5em;
+  border: 1px solid var(--primary-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
