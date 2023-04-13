@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/Header';
-import Home from './pages/home';
-import About from './pages/About';
-import Projects from './pages/projects';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Projects from './pages/projects/Projects';
 import Footer from './components/footer/Footer';
 import { Route, Routes } from "react-router-dom";
 
