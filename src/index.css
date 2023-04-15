@@ -3,6 +3,8 @@
   --secundary-bg: #A1CBE6;
   --primary-accent: #E08300;
   --secundary-accent: #008AE0;
+  --light-text:#A1CBE6;
+  --dark-text: #153041;
 }
 
 * {
