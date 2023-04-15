@@ -1,16 +1,17 @@
 import React from 'react';
 import "./Header.css";
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
         <header>
-            <a href="#">
+            <NavLink to="/">
                 <h1>@Jays</h1>
-            </a>
+            </NavLink>
             <nav>
-                <a href="#">About Me</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <NavLink to="aboutme">About Me</NavLink>
+                <NavLink to="projects">Projects</NavLink>
+                <a href="mailto:mail@mail.com">Contact</a>
             </nav>
         </header>
     );
