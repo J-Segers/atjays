@@ -1,0 +1,23 @@
+.project {
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.project img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.project article {
+    width: 350px;
+    height: 50px;
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: white;
+}

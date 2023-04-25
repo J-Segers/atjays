@@ -3,6 +3,7 @@ import "./Home.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import cartoon from "../../assets/atjays_cartoon.png";
+import Project from '../../components/project/Project';
 
 function Home() {
     return (
@@ -21,7 +22,22 @@ function Home() {
                     <img src={cartoon} alt="" />
                 </section>
                 <section className="projects">
-                    &nbsp;
+                    <h2>Recent Projects</h2>
+                    <Project 
+                        link={"https://j-segers.github.io/teashop/"} 
+                        url={"https://cdn.shopify.com/s/files/1/0533/6743/9558/articles/header-Tea-Culture-Around-The-World.jpg?v=1648730059"} 
+                        alt={"tea"}
+                        projectTitle={"Teashop"}
+                        projectType={"practice"}
+                    />
+                    
+                    <Project 
+                        link={"https://j-segers.github.io/teashop/"} 
+                        url={"https://cdn.shopify.com/s/files/1/0533/6743/9558/articles/header-Tea-Culture-Around-The-World.jpg?v=1648730059"} 
+                        alt={"tea"}
+                        projectTitle={"Teashop"}
+                        projectType={"practice"}
+                    />
                 </section>
             </main>
             <Footer />
