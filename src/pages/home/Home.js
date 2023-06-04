@@ -21,23 +21,25 @@ function Home() {
                     </article>
                     <img src={cartoon} alt="" />
                 </section>
-                <section className="projects">
-                    <h2>Recent Projects</h2>
-                    <Project 
-                        link={"https://j-segers.github.io/teashop/"} 
-                        url={"https://cdn.shopify.com/s/files/1/0533/6743/9558/articles/header-Tea-Culture-Around-The-World.jpg?v=1648730059"} 
-                        alt={"tea"}
-                        projectTitle={"Teashop"}
-                        projectType={"practice"}
-                    />
-                    
-                    <Project 
-                        link={"https://j-segers.github.io/teashop/"} 
-                        url={"https://cdn.shopify.com/s/files/1/0533/6743/9558/articles/header-Tea-Culture-Around-The-World.jpg?v=1648730059"} 
-                        alt={"tea"}
-                        projectTitle={"Teashop"}
-                        projectType={"practice"}
-                    />
+                <section className="projects-container">
+                    <section className="projects">
+                        <h2>Recent Projects</h2>
+                        <Project 
+                            link={"https://j-segers.github.io/teashop/"} 
+                            url={"https://cdn.shopify.com/s/files/1/0533/6743/9558/articles/header-Tea-Culture-Around-The-World.jpg?v=1648730059"} 
+                            alt={"tea"}
+                            projectTitle={"Teashop"}
+                            projectType={"practice"}
+                        />
+                        
+                        <Project 
+                            link={"https://j-segers.github.io/teashop/"} 
+                            url={"https://cdn.shopify.com/s/files/1/0533/6743/9558/articles/header-Tea-Culture-Around-The-World.jpg?v=1648730059"} 
+                            alt={"tea"}
+                            projectTitle={"Teashop"}
+                            projectType={"practice"}
+                        />
+                    </section>
                 </section>
             </main>
             <Footer />
