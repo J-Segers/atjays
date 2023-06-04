@@ -1,0 +1,112 @@
+.project-menu-container {
+    position: fixed;
+    left: 0;
+    top: calc(50% - 50px);
+    width: 50px;
+    height: 100px;
+    border-radius: 0 50px 50px 0;
+    z-index: 1;
+}
+
+.project-menu {
+    width: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 50px 50px 0;
+    background-color: var(--primary-accent);
+    z-index: 10;
+}
+
+.hamburger-closed, .hamburger-open {
+    position: relative;
+    left: -2.5px;
+}
+
+.hamburger-closed::before, .hamburger-closed::after,
+.hamburger-open::before, .hamburger-open::after {
+    position: absolute;
+    content: '';
+}
+
+.hamburger-closed, 
+.hamburger-closed::before, .hamburger-closed::after,
+.hamburger-open::before, .hamburger-open::after {
+    width: 25px;
+    height: 5px;
+    background-color: var(--primary-bg);
+}
+
+.hamburger-closed::before {
+    top: -10px;
+}
+
+.hamburger-closed::after {
+    bottom: -10px;
+}
+
+.hamburger-open {
+    width: 5px;
+    height: 5px;
+    background-color: var(--primary-bg);
+    transform: rotateZ(45deg);
+}
+
+.hamburger-open::before {
+    left: -12.5px;
+}
+
+.hamburger-open::after {
+    left: -12.5px;
+    transform: rotateZ(90deg);
+}
+
+
+.return-open {
+    top: -25px;
+}
+
+.github-open {
+    bottom: -25px;
+}
+
+.return-open, .github-open {
+    position: absolute;
+    right: -25px;
+    width: 36px;
+    height: 36px;
+    background-color: var(--primary-accent);
+    border: 2px solid var(--primary-accent);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.return-open img, .return-closed img {
+    width: 25px;
+    height: 25px;
+    margin: 4px 0 0 4px;
+    transform: rotateZ(45deg);
+    z-index: -1;
+}
+
+.github-open img, .github-closed img {
+    width: 32px;
+    height: 32px;
+    forced-color-adjust: var(--primary-bg);
+    margin: 0;
+    z-index: 1;
+}
+
+.return-closed img, .github-closed img {
+    top: 25px;
+    position: absolute;
+    left: 0 ;
+    width: 36px;
+    height: 36px;
+    background-color: var(--primary-accent);
+    border: 2px solid var(--primary-accent);
+    border-radius: 50%;
+    z-index: -1;
+}
+
