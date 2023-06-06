@@ -9,7 +9,7 @@ function Home() {
     return (
         <div id="home-container">
             <Header />
-            <main>
+            <main id='main-home'>
                 <section id="hero">
                     <article>
                         <h2>

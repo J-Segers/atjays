@@ -8,7 +8,7 @@
     overflow-x: hidden;
 }
 
-main {
+#main-home {
     width: 100%;
 }
 
@@ -48,7 +48,7 @@ main {
 
 .projects-container {
     position: relative;
-    width: 100%;
+    min-width: 100%;
     min-height: 300px;
     display: flex;
     justify-content: space-around;
@@ -56,7 +56,7 @@ main {
     background-color: var(--secundary-bg);
     margin: 0;
     padding: 25px 0 50px;
-    
+    margin-bottom: 50px;
 }
 
 .projects-container::before {
