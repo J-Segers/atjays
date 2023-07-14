@@ -13,32 +13,34 @@
 }
 
 #hero {
-    width: 1200px;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
 }
 
 #hero article {
-    width: 350px;
+    width: 400px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-shrink: 0;
-    margin-right: 10%;
+    margin-right: 50px;
 }
 
 #hero h2 {
-    font-size: 3em;
+    font-size: 3.3em;
     color: var(--primary-accent);
     margin-bottom: .25em;
 }
 
 #hero p {
+    width: 250px;
     line-height: 1.25em;
     color: var(--light-text);
+    text-align: justify;
 }
 
 #hero img {
@@ -49,7 +51,7 @@
 .projects-container {
     position: relative;
     min-width: 100%;
-    min-height: 300px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -80,24 +82,44 @@
 }
 
 .projects {
-    width: 1200px;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 50px;
+    grid-auto-rows: 300px;
+    gap: 50px;
+    padding: 50px;
 }
 
 .projects h2 {
-    width: 80%;
-    margin-bottom: 25px;
+    grid-area: span 1 / span 3;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 1175px) {
+    .projects {
+        grid-template-columns: repeat(2, 350px);
+    }
+
+    .projects h2 {
+        grid-area: span 1 / span 2;
+    }
+}
+
+@media (max-width: 775px) {
     #hero {
-        max-width: 600px;
-        min-width: 300px;
-        flex-direction: column;
-        margin: 75px 100px 0;
+        flex-wrap: wrap;
+    }
+
+    #hero article {
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .projects {
+        grid-template-columns: repeat(1, 350px);
+    }
+
+    .projects h2 {
+        grid-area: span 1 / span 1;
     }
 }

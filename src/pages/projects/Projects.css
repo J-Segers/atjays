@@ -1,4 +1,27 @@
 #main-projects {
-    width: 1200px;
-    min-height: calc(100vh - 300px);
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(2, 300px);
+    grid-auto-rows: 300px;
+    gap: 50px;
+    padding: 50px;
+}
+
+@media (max-width: 1575px) {
+    #main-projects {
+        grid-template-columns: repeat(3, 350px);
+    }
+}
+
+@media (max-width: 1175px) {
+    #main-projects {
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+
+@media (max-width: 775px) {
+    #main-projects {
+        grid-template-columns: repeat(1, 350px);
+    }
 }

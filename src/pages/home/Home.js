@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import "./Home.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import cartoon from "../../assets/atjays_cartoon.png";
 import Project from '../../components/project/Project';
+import { PersonalProjectContext } from '../../context/PersonalProjectContext';
+import projectFiles from "../../data/projects.js";
 
-function Home() {
+export default function Home() {
+
+    const { setPrevious } = useContext(PersonalProjectContext);
+
+    useEffect(() => {
+        setPrevious(window.location.href);
+
+    }, [])
+    
     return (
         <div id="home-container">
             <Header />
@@ -13,10 +23,10 @@ function Home() {
                 <section id="hero">
                     <article>
                         <h2>
-                            Fullstack<br />Developer
+                            Frontend<br />Developer
                         </h2>
                         <p className={"hero-text"}>
-                            I'm Jethro a fullstack developer from the Netherlands. I love learning new techniques so I can make better and more expressive websites.
+                            I'm Jethro a front-end developer from the Netherlands. I love learning new techniques so I can make my designs better.
                         </p>
                     </article>
                     <img src={cartoon} alt="" />
@@ -24,21 +34,15 @@ function Home() {
                 <section className="projects-container">
                     <section className="projects">
                         <h2>Recent Projects</h2>
-                        <Project 
-                            link={"https://j-segers.github.io/teashop/"} 
-                            url={"https://cdn.shopify.com/s/files/1/0533/6743/9558/articles/header-Tea-Culture-Around-The-World.jpg?v=1648730059"} 
-                            alt={"tea"}
-                            projectTitle={"Teashop"}
-                            projectType={"practice"}
-                        />
-                        
-                        <Project 
-                            link={"https://j-segers.github.io/teashop/"} 
-                            url={"https://cdn.shopify.com/s/files/1/0533/6743/9558/articles/header-Tea-Culture-Around-The-World.jpg?v=1648730059"} 
-                            alt={"tea"}
-                            projectTitle={"Teashop"}
-                            projectType={"practice"}
-                        />
+                        {projectFiles.slice(0, 6).map((item) => {
+                            return <Project 
+                            link={item.link} 
+                            imgURL={item.img} 
+                            alt={item.alt}
+                            projectTitle={item.title}
+                            projectType={item.type}
+                            />
+                        })}
                     </section>
                 </section>
             </main>
@@ -46,4 +50,3 @@ function Home() {
         </div>
     );
 }
-export default Home;

@@ -2,21 +2,29 @@ import React from 'react';
 import "./Projects.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import projectFiles from '../../data/projects';
+import Project from '../../components/project/Project';
 
-import Project from "../../components/project/Project"
 
-function Projects() {
+export default function Projects() {
+
     return (
         <>
             <Header />
             <main id={"main-projects"}>
-                <Project src={"https://j-segers.github.io/teashop/"}/>
-                <Project src={"https://j-segers.github.io/teashop/"}/>
+            {projectFiles.map((item) => {
+                            return <Project 
+                            link={item.link} 
+                            imgURL={item.img} 
+                            alt={item.alt}
+                            projectTitle={item.title}
+                            projectType={item.type}
+                            />
+                        })}
             </main>
             <Footer />
         </>
-       
     );
+
 }
 
-export default Projects;

@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useContext} from 'react';
 import "./PersonalProject.css";
 import ProjectMenu from '../../components/projectMenu/ProjectMenu';
+import { PersonalProjectContext } from '../../context/PersonalProjectContext';
 
-function PersonalProject() {
+export default function PersonalProject() {
+    const { projectLink } = useContext(PersonalProjectContext);
+
     return (
         <div className="personal-container">
-            <embed src="https://j-segers.github.io/teashop/" />
+            <embed src={projectLink}/>
             <ProjectMenu />
         </div>
     );
 }
-
-export default PersonalProject;
