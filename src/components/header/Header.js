@@ -9,8 +9,8 @@ function Header() {
                 <h1>@Jays</h1>
             </NavLink>
             <nav>
-                <NavLink to="aboutme">About Me</NavLink>
-                <NavLink to="projects">Projects</NavLink>
+                <NavLink to="/aboutme">About Me</NavLink>
+                <NavLink to="/projects">Projects</NavLink>
                 <a href="mailto:mail@mail.com">Contact</a>
             </nav>
         </header>
