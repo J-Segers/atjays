@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react';
 import "./Home.css";
-import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import cartoon from "../../assets/atjays_cartoon.png";
 import Project from '../../components/project/Project';
 import { PersonalProjectContext } from '../../context/PersonalProjectContext';
 import projectFiles from "../../data/projects.js";
+import Header from '../../components/header/Header';
 
 export default function Home() {
 
@@ -13,8 +13,7 @@ export default function Home() {
 
     useEffect(() => {
         setPrevious(window.location.href);
-
-    }, [])
+    }, [setPrevious])
     
     return (
         <div id="home-container">
