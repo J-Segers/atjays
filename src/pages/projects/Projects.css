@@ -1,5 +1,6 @@
 #main-projects {
     width: auto;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 350px);
     grid-template-rows: repeat(2, 300px);
@@ -7,6 +8,8 @@
     gap: 50px;
     padding: 50px;
 }
+
+
 
 @media (max-width: 1575px) {
     #main-projects {

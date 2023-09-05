@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Projects.css";
-import Header from "../../components/header/Header";
+import Header from '../../components/header/Header';
 import Footer from "../../components/footer/Footer";
 import projectFiles from '../../data/projects';
 import Project from '../../components/project/Project';
@@ -10,7 +10,7 @@ export default function Projects() {
 
     return (
         <>
-            <Header />
+        <Header />
             <main id={"main-projects"}>
             {projectFiles.map((item) => {
                             return <Project 
