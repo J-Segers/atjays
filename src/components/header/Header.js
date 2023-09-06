@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom';
 function Header() {
     return (
         <header>
-            <NavLink to="/">
+            <NavLink to="/atjays">
                 <h1>@Jays</h1>
             </NavLink>
             <nav>
-                <NavLink to="/aboutme">About Me</NavLink>
-                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/atjays/aboutme">About Me</NavLink>
+                <NavLink to="/atjays/projects">Projects</NavLink>
                 <a href="mailto:mail@mail.com">Contact</a>
             </nav>
         </header>
