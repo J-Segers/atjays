@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/atjays.github-io/static/css/main.fa343057.css",
-    "main.js": "/atjays.github-io/static/js/main.aec7258e.js",
-    "static/js/787.12500067.chunk.js": "/atjays.github-io/static/js/787.12500067.chunk.js",
-    "static/media/20230830_235751.jpg": "/atjays.github-io/static/media/20230830_235751.77f4812b9841324d5f15.jpg",
-    "static/media/13992.jpg": "/atjays.github-io/static/media/13992.cbdce9a8b3e4ca619158.jpg",
-    "static/media/4884785.jpg": "/atjays.github-io/static/media/4884785.0d839a5acbd31eddfd9b.jpg",
-    "static/media/atjays_cartoon.png": "/atjays.github-io/static/media/atjays_cartoon.a5e8a268547ae8a0e720.png",
-    "index.html": "/atjays.github-io/index.html",
-    "main.fa343057.css.map": "/atjays.github-io/static/css/main.fa343057.css.map",
-    "main.aec7258e.js.map": "/atjays.github-io/static/js/main.aec7258e.js.map",
-    "787.12500067.chunk.js.map": "/atjays.github-io/static/js/787.12500067.chunk.js.map"
+    "main.css": "/atjays/static/css/main.fa343057.css",
+    "main.js": "/atjays/static/js/main.fc818195.js",
+    "static/js/787.12500067.chunk.js": "/atjays/static/js/787.12500067.chunk.js",
+    "static/media/20230830_235751.jpg": "/atjays/static/media/20230830_235751.77f4812b9841324d5f15.jpg",
+    "static/media/13992.jpg": "/atjays/static/media/13992.cbdce9a8b3e4ca619158.jpg",
+    "static/media/4884785.jpg": "/atjays/static/media/4884785.0d839a5acbd31eddfd9b.jpg",
+    "static/media/atjays_cartoon.png": "/atjays/static/media/atjays_cartoon.a5e8a268547ae8a0e720.png",
+    "index.html": "/atjays/index.html",
+    "main.fa343057.css.map": "/atjays/static/css/main.fa343057.css.map",
+    "main.fc818195.js.map": "/atjays/static/js/main.fc818195.js.map",
+    "787.12500067.chunk.js.map": "/atjays/static/js/787.12500067.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa343057.css",
-    "static/js/main.aec7258e.js"
+    "static/js/main.fc818195.js"
   ]
 }
