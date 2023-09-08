@@ -1,0 +1,2 @@
+:root,body,html{height:100%;width:100%}:root{--primary-bg:#153041;--secundary-bg:#a1cbe6;--primary-accent:#e08300;--secundary-accent:#008ae0;--light-text:#a1cbe6;--dark-text:#153041}*{box-sizing:border-box;margin:0;padding:0}body{background-color:#153041;background-color:var(--primary-bg);font-family:Helvetica,Arial,sans-serif}#app-container{align-items:center;display:flex;flex-direction:column;justify-content:space-between;min-height:100vh;width:100%}
+/*# sourceMappingURL=main.dc8392df.css.map*/
